@@ -24,7 +24,7 @@ public class PostController {
     @PostMapping("/write")
     public String write() {
         Post post = new Post();
-        post.setTitle("새로운제목입니다.");
+        post.setTitle("newtitle");
         post.setContent("");
         post.setCreateDate(LocalDateTime.now());
         postRepository.save(post);
